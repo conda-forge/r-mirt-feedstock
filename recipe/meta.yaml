@@ -1,4 +1,4 @@
-{% set version = '1.27.1' %}
+{% set version = "1.28" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/mirt_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/mirt/mirt_{{ version }}.tar.gz
-  sha256: f7cae63f3a7e22f6d262883f5787e00f3f087833da4514ab2e1874d43d7e840c
+  sha256: 707fe813a9ab165092e16f86567b18ebccfd31140b78daaa06ab3d6e488873fa
 
 build:
   number: 0
