@@ -7,21 +7,23 @@ Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Analysis of dichotomous and polytomous response data using unidimensional and multidimensional latent trait models under the Item Response Theory paradigm (Chalmers (2012) <doi:10.18637/jss.v048.i06>). Exploratory and confirmatory models can be estimated with quadrature (EM) or stochastic (MHRM) methods. Confirmatory bi-factor and two-tier analyses are available for modeling item testlets. Multiple group analysis and mixed effects designs also are available for detecting differential item and test functioning as well as modelling item and person covariates. Finally, latent class models such as the DINA, DINO, multidimensional latent class, and several other discrete latent variable models are supported.
+Summary: Analysis of dichotomous and polytomous response data using unidimensional and multidimensional latent trait models under the Item Response Theory paradigm (Chalmers (2012) <doi:10.18637/jss.v048.i06>).  Exploratory and confirmatory models can be estimated with quadrature (EM)  or stochastic (MHRM) methods. Confirmatory bi-factor and two-tier analyses are available for modeling item testlets. Multiple group analysis and mixed effects designs also are available for detecting differential item and test functioning as well as modelling item and person covariates. Finally, latent class models such as the DINA, DINO, multidimensional latent class, and several other discrete latent variable models, including mixture and zero-inflated response models,  are supported.
 
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-mirt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-mirt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-mirt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-mirt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-mirt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-mirt-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-mirt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-mirt-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-mirt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-mirt-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-mirt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-mirt-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-mirt/badges/version.svg)](https://anaconda.org/conda-forge/r-mirt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-mirt/badges/downloads.svg)](https://anaconda.org/conda-forge/r-mirt)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--mirt-green.svg)](https://anaconda.org/conda-forge/r-mirt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-mirt.svg)](https://anaconda.org/conda-forge/r-mirt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-mirt.svg)](https://anaconda.org/conda-forge/r-mirt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-mirt.svg)](https://anaconda.org/conda-forge/r-mirt) |
 
 Installing r-mirt
 =================
