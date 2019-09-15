@@ -1,4 +1,4 @@
-{% set version = '1.30' %}
+{% set version = "1.31" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirt/mirt_{{ version }}.tar.gz
-  sha256: 78e7666c533ce70fbd66cc25ed6a908b13d10edb8cfaa37bb44666d12d3c94c8
+  sha256: f8016eabc8146d50ebfbb77639217ed670efa047ffcce4a4737e02189359d7c9
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
