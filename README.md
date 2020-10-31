@@ -3,7 +3,7 @@ About r-mirt
 
 Home: https://github.com/philchalmers/mirt, https://github.com/philchalmers/mirt/wiki, https://groups.google.com/forum/#!forum/mirt-package
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mirt-feedstock/blob/master/LICENSE.txt)
 
