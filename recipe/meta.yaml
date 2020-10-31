@@ -14,7 +14,6 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: true  # [r_base == '3.5.1']
   number: 0
   rpaths:
     - lib/R/lib/
@@ -22,10 +21,10 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('cxx') }}      # [not win]
+    - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('m2w64_cxx') }}        # [win]
+    - {{ compiler('cxx') }}            # [not win]
+    - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -60,12 +59,13 @@ test:
 
 about:
   home: https://github.com/philchalmers/mirt, https://github.com/philchalmers/mirt/wiki, https://groups.google.com/forum/#!forum/mirt-package
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Analysis of dichotomous and polytomous response data using unidimensional and multidimensional latent trait models under the Item Response Theory paradigm (Chalmers (2012) <doi:10.18637/jss.v048.i06>).  Exploratory and confirmatory models can be estimated with quadrature (EM)  or stochastic (MHRM) methods. Confirmatory
     bi-factor and two-tier analyses are available for modeling item testlets. Multiple group analysis and mixed effects designs also are available for detecting differential item and test functioning as well as modeling item and person covariates. Finally, latent class models such as the DINA, DINO, multidimensional latent
     class, and several other discrete latent variable models, including mixture and zero-inflated response models,  are supported.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
