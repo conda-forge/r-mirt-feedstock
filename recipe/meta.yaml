@@ -30,13 +30,16 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-deriv
     - r-gparotation
+    - r-matrix
     - r-rcpp
     - r-rcpparmadillo
     - r-dcurver
+    - r-gridextra
     - r-lattice
     - r-mgcv
     - r-vegan
@@ -45,9 +48,11 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-deriv
     - r-gparotation
+    - r-matrix
     - r-rcpp
     - r-rcpparmadillo
     - r-dcurver
+    - r-gridextra
     - r-lattice
     - r-mgcv
     - r-vegan
