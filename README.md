@@ -3,6 +3,7 @@ About r-mirt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mirt-feedstock/blob/main/LICENSE.txt)
 
+
 About r-mirt
 ------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/philchalmers/mirt, https://github.com/philchalmers/mirt
 Package license: GPL-3.0-or-later
 
 Summary: Analysis of dichotomous and polytomous response data using unidimensional and multidimensional latent trait models under the Item Response Theory paradigm (Chalmers (2012) <doi:10.18637/jss.v048.i06>).  Exploratory and confirmatory models can be estimated with quadrature (EM)  or stochastic (MHRM) methods. Confirmatory bi-factor and two-tier analyses are available for modeling item testlets. Multiple group analysis and mixed effects designs also are available for detecting differential item and test functioning as well as modeling item and person covariates. Finally, latent class models such as the DINA, DINO, multidimensional latent class, and several other discrete latent variable models, including mixture and zero-inflated response models,  are supported.
+
 About r-mirt
 ------------
 
