@@ -22,6 +22,18 @@ build:
     - '*/R.dll'           # [win]
 requirements:
   build:
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-deriv                    # [build_platform != target_platform]
+    - r-dcurver                  # [build_platform != target_platform]
+    - r-rcpparmadillo            # [build_platform != target_platform]
+    - r-vegan                    # [build_platform != target_platform]
+    - r-mgcv                     # [build_platform != target_platform]
+    - r-rcpp                     # [build_platform != target_platform]
+    - r-gridextra                # [build_platform != target_platform]
+    - r-matrix                   # [build_platform != target_platform]
+    - r-lattice                  # [build_platform != target_platform]
+    - r-gparotation              # [build_platform != target_platform]
+    - r-pbapply                  # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
     - {{ compiler('cxx') }}        # [not win]
