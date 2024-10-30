@@ -61,6 +61,7 @@ requirements:
     - r-vegan
     - libblas
     - liblapack
+    - llvm-openmp                  # [osx]
   run:
     - r-base
     - r-dcurver
