@@ -35,6 +35,7 @@ requirements:
     - r-lattice                    # [build_platform != target_platform]
     - r-gparotation                # [build_platform != target_platform]
     - r-pbapply                    # [build_platform != target_platform]
+    - r-simdesign                  # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
