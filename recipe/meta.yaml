@@ -1,4 +1,4 @@
-{% set version = "1.41" %}
+{% set version = "1.45.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirt/mirt_{{ version }}.tar.gz
-  sha256: d01b2d2e8caf0f1569f1db9138839e698e17c46020dfaaab8a5496f649c6a863
+  sha256: 0529c5369f5d50f99d6625ac2186b2d2095f29be15dfe4d6c7b7a3650b24c28a
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,18 +23,19 @@ build:
 
 requirements:
   build:
-    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
-    - r-deriv                    # [build_platform != target_platform]
-    - r-dcurver                  # [build_platform != target_platform]
-    - r-rcpparmadillo            # [build_platform != target_platform]
-    - r-vegan                    # [build_platform != target_platform]
-    - r-mgcv                     # [build_platform != target_platform]
-    - r-rcpp                     # [build_platform != target_platform]
-    - r-gridextra                # [build_platform != target_platform]
-    - r-matrix                   # [build_platform != target_platform]
-    - r-lattice                  # [build_platform != target_platform]
-    - r-gparotation              # [build_platform != target_platform]
-    - r-pbapply                  # [build_platform != target_platform]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-deriv                      # [build_platform != target_platform]
+    - r-dcurver                    # [build_platform != target_platform]
+    - r-rcpparmadillo              # [build_platform != target_platform]
+    - r-vegan                      # [build_platform != target_platform]
+    - r-mgcv                       # [build_platform != target_platform]
+    - r-rcpp                       # [build_platform != target_platform]
+    - r-gridextra                  # [build_platform != target_platform]
+    - r-matrix                     # [build_platform != target_platform]
+    - r-lattice                    # [build_platform != target_platform]
+    - r-gparotation                # [build_platform != target_platform]
+    - r-pbapply                    # [build_platform != target_platform]
+    - r-simdesign                  # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
     - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
@@ -63,13 +64,15 @@ requirements:
     - r-mgcv
     - r-pbapply >=1.3_0
     - r-vegan
+    - libblas
+    - liblapack
+    - llvm-openmp                  # [osx]
   run:
     - r-base
     - r-deriv
     - r-gparotation
     - r-matrix >=1.5_0
     - r-rcpp
-    - r-rcpparmadillo
     - r-simdesign
     - r-dcurver
     - r-gridextra
@@ -77,6 +80,7 @@ requirements:
     - r-mgcv
     - r-pbapply >=1.3_0
     - r-vegan
+    - llvm-openmp                  # [osx]
 
 test:
   commands:
