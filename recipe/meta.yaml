@@ -62,6 +62,7 @@ requirements:
     - r-gridextra
     - r-lattice
     - r-mgcv
+    - r-splines2
     - r-pbapply >=1.3_0
     - r-vegan
     - libblas
@@ -79,6 +80,7 @@ requirements:
     - r-lattice
     - r-mgcv
     - r-pbapply >=1.3_0
+    - r-splines2
     - r-vegan
     - llvm-openmp                  # [osx]
 
