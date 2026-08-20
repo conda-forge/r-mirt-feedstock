@@ -1,4 +1,4 @@
-{% set version = "1.46.1" %}
+{% set version = "1.47" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirt/mirt_{{ version }}.tar.gz
-  sha256: d783f1b56ab3fafebe2c5108cc135cbb0adbcf51a6535503f59c95f65ade9e09
+  sha256: f92727cdc00af8f0bf9d530480f80a88696682008ac36ff22829edf9d452472a
 
 build:
   number: 0
